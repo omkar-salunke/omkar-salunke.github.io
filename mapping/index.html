@@ -263,10 +263,10 @@
 	<hr>
 
     
-	<p><b class="section-title">Label: </b>ThematicNetwork</p>
+	<p><b class="section-title">Label: </b>Analytics</p>
     
     
-        <p><b class="section-title">Description: </b>The Thematic Network that has the role of the &quot;source&quot; of a data object.</p>
+        <p><b class="section-title">Description: </b>The Thematic Network that has the role of the analytics  &quot;source&quot; of a data object.</p>
     
 
 
@@ -295,7 +295,7 @@
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
 &lt;http://mappings.dbpedia.org/index.php/OntologyClass:ResearchProject&gt; a owl:Class ;
-    rdfs:label &quot;ThematicNetwork&quot;@en ;
+    rdfs:label &quot;Analytics&quot;@en ;
     rdfs:comment &quot;The Thematic Network that has the role of the \&quot;source\&quot; of a data object.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty schema:alternateName ;
@@ -789,7 +789,7 @@
 	<p><b class="section-title">Label: </b>Creator</p>
     
     
-        <p><b class="section-title">Description: </b>The Creator class is an abstract class used to denote any entity (person or ogroup of persons) that has been involved in the development of a data object (i.e. instance of the Output class) in the context of a Thematic Network (i.e. an instance of the ThematicNetwork class).</p>
+        <p><b class="section-title">Description: </b>The Creator class is an abstract class used to denote any entity (person or ogroup of persons) that has been involved in the development of a data object (i.e. instance of the Output class) in the context of a Thematic Network (i.e. an instance of the Analytics class).</p>
     
 
 
@@ -819,7 +819,7 @@
 
 :Creator a owl:Class ;
     rdfs:label &quot;Creator&quot;@en ;
-    rdfs:comment &quot;The Creator class is an abstract class used to denote any entity (person or ogroup of persons) that has been involved in the development of a data object (i.e. instance of the Output class) in the context of a Thematic Network (i.e. an instance of the ThematicNetwork class).&quot;@en ;
+    rdfs:comment &quot;The Creator class is an abstract class used to denote any entity (person or ogroup of persons) that has been involved in the development of a data object (i.e. instance of the Output class) in the context of a Thematic Network (i.e. an instance of the Analytics class).&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty schema:description ;
             owl:someValuesFrom xsd:string ],
@@ -3061,7 +3061,7 @@ void:Dataset a owl:Class ;
 	<p><b class="section-title">Label: </b>IsAssociatedWith</p>
     
     
-        <p><b class="section-title">Description: </b>The relationship between the &quot;ThematicNetwork&quot; class and the Domain class. This relationship is used to denote that a Thematic Network relates to one or more Domains.</p>
+        <p><b class="section-title">Description: </b>The relationship between the &quot;Analytics&quot; class and the Domain class. This relationship is used to denote that a Thematic Network relates to one or more Domains.</p>
     
 
 
@@ -3089,7 +3089,7 @@ void:Dataset a owl:Class ;
         owl:IrreflexiveProperty,
         owl:ObjectProperty ;
     rdfs:label &quot;isAssociatedWith&quot;@en ;
-    rdfs:comment &quot;The relationship between the \&quot;ThematicNetwork\&quot; class and the Domain class. This relationship is used to denote that a Thematic Network relates to one or more Domains.&quot;@en .
+    rdfs:comment &quot;The relationship between the \&quot;Analytics\&quot; class and the Domain class. This relationship is used to denote that a Thematic Network relates to one or more Domains.&quot;@en .
 
 </pre>
 
@@ -3741,7 +3741,7 @@ void:Dataset a owl:Class ;
 	<p><b class="section-title">Label: </b>IsCoordinatedBy</p>
     
     
-        <p><b class="section-title">Description: </b>The relationship between the &quot;ThematicNetwork&quot; class and the &quot;Organisation&quot; class. This relationship is used to denote that one or more Thematic Networks are coordinated by an Organisation.</p>
+        <p><b class="section-title">Description: </b>The relationship between the &quot;Analytics&quot; class and the &quot;Organisation&quot; class. This relationship is used to denote that one or more Thematic Networks are coordinated by an Organisation.</p>
     
 
 
@@ -3770,7 +3770,7 @@ void:Dataset a owl:Class ;
         owl:IrreflexiveProperty,
         owl:ObjectProperty ;
     rdfs:label &quot;isCoordinatedBy&quot;@en ;
-    rdfs:comment &quot;The relationship between the \&quot;ThematicNetwork\&quot; class and the \&quot;Organisation\&quot; class. This relationship is used to denote that one or more Thematic Networks are coordinated by an Organisation.&quot;@en .
+    rdfs:comment &quot;The relationship between the \&quot;Analytics\&quot; class and the \&quot;Organisation\&quot; class. This relationship is used to denote that one or more Thematic Networks are coordinated by an Organisation.&quot;@en .
 
 </pre>
 
@@ -6163,7 +6163,7 @@ schema:width a owl:DatatypeProperty,
 
 
 
-	var json1 = {"children": [{"qname": "http://mappings.dbpedia.org/index.php/OntologyClass:ResearchProject", "name": "ThematicNetwork", "objid": 2, "size": 1, "realsize": 0}, {"qname": "http://purl.org/dc/dcmitype/Dataset", "name": "Dataset", "objid": 3, "size": 1, "realsize": 0}, {"qname": "http://purl.org/dc/dcmitype/Image", "name": "Image", "objid": 4, "size": 1, "realsize": 0}, {"qname": "http://purl.org/dc/terms/FileFormat", "name": "KnowledgeObjectFormat", "objid": 5, "size": 13, "realsize": 8, "children": [{"qname": "ontology:AudioOutputFormat", "name": "AudioMediaObjectFormat", "objid": 24, "size": 1, "realsize": 0}, {"qname": "ontology:DatasetOutputFormat", "name": "DatasetFormat", "objid": 27, "size": 1, "realsize": 0}, {"qname": "ontology:DocumentOutputFormat", "name": "TextDigitalDocumentFormat", "objid": 29, "size": 1, "realsize": 0}, {"qname": "ontology:ImageOutputFormat", "name": "ImageMediaObjectFormat", "objid": 32, "size": 1, "realsize": 0}, {"qname": "ontology:PresentationOutputFormat", "name": "PresentationDigitalDocumentFormat", "objid": 36, "size": 1, "realsize": 0}, {"qname": "ontology:SoftwareOutputFormat", "name": "SoftwareApplicationFormat", "objid": 39, "size": 1, "realsize": 0}, {"qname": "ontology:SpreadsheetDigitalDocumentOutputFormat", "name": "SpreadsheetDigitalDocumentFormat", "objid": 41, "size": 1, "realsize": 0}, {"qname": "ontology:VideoOutputFormat", "name": "VideoMediaObjectFormat", "objid": 46, "size": 1, "realsize": 0}]}, {"qname": "http://www.w3.org/ns/dcat#Dataset", "name": "Dataset", "objid": 22, "size": 1, "realsize": 0}, {"qname": "http://xmlns.com/foaf/0.1/Person", "name": "Person", "objid": 23, "size": 1, "realsize": 0}, {"qname": "https://euraknos.eu/ontology/schema.org/CreativeWork", "name": "KnowledgeObject", "objid": 48, "size": 7, "realsize": 2, "children": [{"qname": "schema:DigitalDocument", "name": "DigitalDocument", "objid": 11, "size": 1, "realsize": 0}, {"qname": "schema:MediaObject", "name": "MediaObject", "objid": 14, "size": 1, "realsize": 0}]}, {"qname": "ontology:Creator", "name": "Creator", "objid": 26, "size": 1, "realsize": 0}, {"qname": "ontology:Domain", "name": "Domain", "objid": 31, "size": 1, "realsize": 0}, {"qname": "ontology:KnowledgeObjectType", "name": "KnowledgeObjectType", "objid": 34, "size": 13, "realsize": 8, "children": [{"qname": "ontology:AudioOutputType", "name": "AudioMediaObjectType", "objid": 25, "size": 1, "realsize": 0}, {"qname": "ontology:DatasetOutputType", "name": "DatasetType", "objid": 28, "size": 1, "realsize": 0}, {"qname": "ontology:DocumentOutputType", "name": "TextDigitalDocumentType", "objid": 30, "size": 1, "realsize": 0}, {"qname": "ontology:ImageOutputType", "name": "ImageMediaObjectType", "objid": 33, "size": 1, "realsize": 0}, {"qname": "ontology:PresentationOutputType", "name": "PresentationDigitalDocumentType", "objid": 37, "size": 1, "realsize": 0}, {"qname": "ontology:SoftwareOutputType", "name": "SoftwareApplicationType", "objid": 40, "size": 1, "realsize": 0}, {"qname": "ontology:SpreadsheetDigitalDocumentType", "name": "SpreadsheetDigitalDocumentType", "objid": 42, "size": 1, "realsize": 0}, {"qname": "ontology:VideoOutputType", "name": "VideoMediaObjectType", "objid": 47, "size": 1, "realsize": 0}]}, {"qname": "ontology:OrganisationType", "name": "OrganizationType", "objid": 35, "size": 1, "realsize": 0}, {"qname": "ontology:Purpose", "name": "Purpose", "objid": 38, "size": 1, "realsize": 0}, {"qname": "ontology:StakeholderType", "name": "PersonType", "objid": 43, "size": 1, "realsize": 0}, {"qname": "ontology:Topic", "name": "Topic", "objid": 44, "size": 1, "realsize": 0}, {"qname": "ontology:TypeOfInvolvement", "name": "TypeOfInvolvement", "objid": 45, "size": 1, "realsize": 0}, {"qname": "schema:Audience", "name": "EndUser", "objid": 7, "size": 1, "realsize": 0}, {"qname": "schema:AudioObject", "name": "AudioObject", "objid": 8, "size": 1, "realsize": 0}, {"qname": "schema:Country", "name": "EuropeanCountry", "objid": 9, "size": 1, "realsize": 0}, {"qname": "schema:Dataset", "name": "Dataset", "objid": 10, "size": 1, "realsize": 0}, {"qname": "schema:ImageObject", "name": "ImageObject", "objid": 12, "size": 1, "realsize": 0}, {"qname": "schema:Language", "name": "EuropeanLanguage", "objid": 13, "size": 1, "realsize": 0}, {"qname": "schema:Organization", "name": "Organization", "objid": 15, "size": 1, "realsize": 0}, {"qname": "schema:Person", "name": "Person", "objid": 16, "size": 1, "realsize": 0}, {"qname": "schema:PresentationDigitalDocument", "name": "PresentationDigitalDocument", "objid": 17, "size": 1, "realsize": 0}, {"qname": "schema:SoftwareApplication", "name": "SoftwareApplication", "objid": 18, "size": 1, "realsize": 0}, {"qname": "schema:SpreadsheetDigitalDocument", "name": "SpreadsheetDigitalDocument", "objid": 19, "size": 1, "realsize": 0}, {"qname": "schema:TextDigitalDocument", "name": "TextDigitalDocument", "objid": 20, "size": 1, "realsize": 0}, {"qname": "schema:VideoObject", "name": "VideoObject", "objid": 21, "size": 1, "realsize": 0}, {"qname": "void:Dataset", "name": "Dataset", "objid": 6, "size": 1, "realsize": 0}], "name": "owl:Thing", "id": "None"};
+	var json1 = {"children": [{"qname": "http://mappings.dbpedia.org/index.php/OntologyClass:ResearchProject", "name": "Analytics", "objid": 2, "size": 1, "realsize": 0}, {"qname": "http://purl.org/dc/dcmitype/Dataset", "name": "Dataset", "objid": 3, "size": 1, "realsize": 0}, {"qname": "http://purl.org/dc/dcmitype/Image", "name": "Image", "objid": 4, "size": 1, "realsize": 0}, {"qname": "http://purl.org/dc/terms/FileFormat", "name": "KnowledgeObjectFormat", "objid": 5, "size": 13, "realsize": 8, "children": [{"qname": "ontology:AudioOutputFormat", "name": "AudioMediaObjectFormat", "objid": 24, "size": 1, "realsize": 0}, {"qname": "ontology:DatasetOutputFormat", "name": "DatasetFormat", "objid": 27, "size": 1, "realsize": 0}, {"qname": "ontology:DocumentOutputFormat", "name": "TextDigitalDocumentFormat", "objid": 29, "size": 1, "realsize": 0}, {"qname": "ontology:ImageOutputFormat", "name": "ImageMediaObjectFormat", "objid": 32, "size": 1, "realsize": 0}, {"qname": "ontology:PresentationOutputFormat", "name": "PresentationDigitalDocumentFormat", "objid": 36, "size": 1, "realsize": 0}, {"qname": "ontology:SoftwareOutputFormat", "name": "SoftwareApplicationFormat", "objid": 39, "size": 1, "realsize": 0}, {"qname": "ontology:SpreadsheetDigitalDocumentOutputFormat", "name": "SpreadsheetDigitalDocumentFormat", "objid": 41, "size": 1, "realsize": 0}, {"qname": "ontology:VideoOutputFormat", "name": "VideoMediaObjectFormat", "objid": 46, "size": 1, "realsize": 0}]}, {"qname": "http://www.w3.org/ns/dcat#Dataset", "name": "Dataset", "objid": 22, "size": 1, "realsize": 0}, {"qname": "http://xmlns.com/foaf/0.1/Person", "name": "Person", "objid": 23, "size": 1, "realsize": 0}, {"qname": "https://euraknos.eu/ontology/schema.org/CreativeWork", "name": "KnowledgeObject", "objid": 48, "size": 7, "realsize": 2, "children": [{"qname": "schema:DigitalDocument", "name": "DigitalDocument", "objid": 11, "size": 1, "realsize": 0}, {"qname": "schema:MediaObject", "name": "MediaObject", "objid": 14, "size": 1, "realsize": 0}]}, {"qname": "ontology:Creator", "name": "Creator", "objid": 26, "size": 1, "realsize": 0}, {"qname": "ontology:Domain", "name": "Domain", "objid": 31, "size": 1, "realsize": 0}, {"qname": "ontology:KnowledgeObjectType", "name": "KnowledgeObjectType", "objid": 34, "size": 13, "realsize": 8, "children": [{"qname": "ontology:AudioOutputType", "name": "AudioMediaObjectType", "objid": 25, "size": 1, "realsize": 0}, {"qname": "ontology:DatasetOutputType", "name": "DatasetType", "objid": 28, "size": 1, "realsize": 0}, {"qname": "ontology:DocumentOutputType", "name": "TextDigitalDocumentType", "objid": 30, "size": 1, "realsize": 0}, {"qname": "ontology:ImageOutputType", "name": "ImageMediaObjectType", "objid": 33, "size": 1, "realsize": 0}, {"qname": "ontology:PresentationOutputType", "name": "PresentationDigitalDocumentType", "objid": 37, "size": 1, "realsize": 0}, {"qname": "ontology:SoftwareOutputType", "name": "SoftwareApplicationType", "objid": 40, "size": 1, "realsize": 0}, {"qname": "ontology:SpreadsheetDigitalDocumentType", "name": "SpreadsheetDigitalDocumentType", "objid": 42, "size": 1, "realsize": 0}, {"qname": "ontology:VideoOutputType", "name": "VideoMediaObjectType", "objid": 47, "size": 1, "realsize": 0}]}, {"qname": "ontology:OrganisationType", "name": "OrganizationType", "objid": 35, "size": 1, "realsize": 0}, {"qname": "ontology:Purpose", "name": "Purpose", "objid": 38, "size": 1, "realsize": 0}, {"qname": "ontology:StakeholderType", "name": "PersonType", "objid": 43, "size": 1, "realsize": 0}, {"qname": "ontology:Topic", "name": "Topic", "objid": 44, "size": 1, "realsize": 0}, {"qname": "ontology:TypeOfInvolvement", "name": "TypeOfInvolvement", "objid": 45, "size": 1, "realsize": 0}, {"qname": "schema:Audience", "name": "EndUser", "objid": 7, "size": 1, "realsize": 0}, {"qname": "schema:AudioObject", "name": "AudioObject", "objid": 8, "size": 1, "realsize": 0}, {"qname": "schema:Country", "name": "EuropeanCountry", "objid": 9, "size": 1, "realsize": 0}, {"qname": "schema:Dataset", "name": "Dataset", "objid": 10, "size": 1, "realsize": 0}, {"qname": "schema:ImageObject", "name": "ImageObject", "objid": 12, "size": 1, "realsize": 0}, {"qname": "schema:Language", "name": "EuropeanLanguage", "objid": 13, "size": 1, "realsize": 0}, {"qname": "schema:Organization", "name": "Organization", "objid": 15, "size": 1, "realsize": 0}, {"qname": "schema:Person", "name": "Person", "objid": 16, "size": 1, "realsize": 0}, {"qname": "schema:PresentationDigitalDocument", "name": "PresentationDigitalDocument", "objid": 17, "size": 1, "realsize": 0}, {"qname": "schema:SoftwareApplication", "name": "SoftwareApplication", "objid": 18, "size": 1, "realsize": 0}, {"qname": "schema:SpreadsheetDigitalDocument", "name": "SpreadsheetDigitalDocument", "objid": 19, "size": 1, "realsize": 0}, {"qname": "schema:TextDigitalDocument", "name": "TextDigitalDocument", "objid": 20, "size": 1, "realsize": 0}, {"qname": "schema:VideoObject", "name": "VideoObject", "objid": 21, "size": 1, "realsize": 0}, {"qname": "void:Dataset", "name": "Dataset", "objid": 6, "size": 1, "realsize": 0}], "name": "owl:Thing", "id": "None"};
 
 	
 	var variable_height1 = 800;
